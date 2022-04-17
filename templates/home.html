@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Sustainable Development Goals
+{% endblock %}
+
+
+{% block content %}
+					
+
+
+<div class="container goalgrid">
+	<div class="row">
+
+		{% for i in goals %}
+		<div class="col-md-2 goalbox">
+		
+				{{ i.attributes.Goal_short }}
+		</div>
+
+		{% endfor %}
+	</div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}
